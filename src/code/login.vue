@@ -118,7 +118,6 @@ function sign() {
             transparent 50%,
             hsla(219deg, 90%, 80%, .5) 100%),
             linear-gradient(-45deg, #060d5e, #002268);
-    animation: pointMove 2.5s infinite alternate linear; 
 }
 
 
@@ -213,42 +212,13 @@ export default {
             flag: true
         };
     },
-    mounted(){
-        this.$nextTick(()=>{
-            setInterval(this.update_clock,1000);
-        })
-    },
+
     methods:{
         handleFlip() {
             let container = document.getElementById('container')
             container.style.transform = this.flag ? 'rotateY(180deg)':''
             this.flag = !this.flag
         },
-        update_clock:function(e){
-            var time=new Date();
-            var year=time.getFullYear();
-            if(year<10){
-                year="0"+year
-            }
-            var mon=time.getMonth()+1;
-            if(mon<10){
-                mon="0"+mon
-            }
-            var day=time.getDate();
-            if(day<10){
-                day="0"+day
-            }
-            var hour=time.getHours();
-            if(hour<10){
-                hour="0"+hour
-            }
-            var min=time.getMinutes();
-            if(min<10){
-                min="0"+min
-            }
-            this.time=hour+":"+min;
-            this.date=year+"/"+mon+"/"+day;
-        }
         
     },
     

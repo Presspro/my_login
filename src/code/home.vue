@@ -76,10 +76,11 @@ onMounted(() => {
     left: 15%;
 }
 #clock{
+
     color: aliceblue;
     position: absolute;
-    top: 70%;
-    left: 15%;
+    top: 30%;
+    left: 38%;
     text-align: left;
 }
 #time{
