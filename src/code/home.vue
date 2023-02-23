@@ -40,6 +40,16 @@ onMounted(() => {
 </template>
 
 <style scoped>
+@property --xPoint {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 400px;
+}
+@property --yPoint {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 300px;
+}
 #background{
     position: fixed;
     height: 100%;
@@ -47,8 +57,13 @@ onMounted(() => {
     top: 0;
     left: 0;
     margin:0px;
-    background: url(../assets\a.jpeg) no-repeat;
-    background-size:100% 100%; 
+    background:
+        conic-gradient(
+            from -45deg at 400px 300px,
+            hsla(170deg, 100%, 70%, .7),
+            transparent 50%,
+            transparent),
+            linear-gradient(-45deg, #060d5e, #002268); 
 }
 
 #logo{

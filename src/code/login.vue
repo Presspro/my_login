@@ -104,15 +104,23 @@ function sign() {
 </template>
 
 <style scoped>
+
 #background{
     position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    background: url(../assets\a.jpeg) no-repeat;
-    background-size:100% 100%; 
+    background:
+        conic-gradient(
+            from -45deg at 400px 300px,
+            hsla(170deg, 100%, 70%, .7),
+            transparent 50%,
+            hsla(219deg, 90%, 80%, .5) 100%),
+            linear-gradient(-45deg, #060d5e, #002268);
+    animation: pointMove 2.5s infinite alternate linear; 
 }
+
 
 #disc{
     color: rgb(184, 187, 190);
