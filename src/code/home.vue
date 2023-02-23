@@ -62,7 +62,7 @@ onMounted(() => {
             from -45deg at 400px 300px,
             hsla(170deg, 100%, 70%, .7),
             transparent 50%,
-            transparent),
+            hsla(219deg, 90%, 80%, .5) 100%),
             linear-gradient(-45deg, #060d5e, #002268); 
 }
 
