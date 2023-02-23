@@ -68,10 +68,6 @@ function sign() {
 <template>
     <div id="background">
         <div id="disc">Welcome to this page！</div>
-        <div id="clock">
-            <div id="time">{{time}}</div>
-            <div id="date">{{date}}</div>
-        </div>
         <div id="container">
             <div id="login">
                 <el-card class="box-card" id="card_login">
@@ -178,19 +174,6 @@ function sign() {
 }
 #bs3{
     margin-left: 125px;  
-}
-#clock{
-    color: white;
-    position: absolute;
-    top: 70%;
-    left: 15%;
-    text-align: left;
-}
-#time{
-    font-size: 100px;
-}
-#date{
-    font-size: 35px;
 }
 #copyright{
     color: white;
